@@ -4,133 +4,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Raheemat Abdulfatai - Creative Designer</title>
-    <!-- External Stylesheets -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <!-- Navigation -->
     <nav>
         <div class="container">
-            <div class="logo" onclick="navigateTo('home')">Raheemah</div>
-            <ul class="nav-links" id="navLinks">
-                <li><a href="#" onclick="navigateTo('home')">Home</a></li>
-                <li><a href="#" onclick="navigateTo('about')">About</a></li>
-                <li><a href="#" onclick="navigateTo('portfolio')">Portfolio</a></li>
-                <li><a href="#" onclick="navigateTo('courses')">Courses</a></li>
-                <li><a href="#" onclick="navigateTo('contact')">Contact</a></li>
+            <div class="logo">Raheemah</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
-            <div class="menu-toggle" id="menuToggle">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
         </div>
     </nav>
 
-    <!-- HOME PAGE -->
-    <div id="home" class="page active">
-        <section class="hero">
-            <div class="hero-content">
-                <div class="profile-pic"><img src="raheemah.jpeg" alt="Raheemat Abdulfatai"></div>
-                <h1>Raheemat Abdulfatai</h1>
-                <p class="subtitle">Creative Designer | Henna Artist | Event Stylist</p>
-                <a class="cta-button" onclick="navigateTo('contact')">Let's Collaborate</a>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="profile-pic">
+            <img src="raheemah.jpeg" alt="Raheemat Abdulfatai">
+        </div>
+        <h1>Raheemat Abdulfatai</h1>
+        <p class="subtitle">Creative Designer | Henna Artist | Event Stylist</p>
+        <a href="#contact" class="cta-button">Let's Collaborate</a>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <h2>What I Do</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon">
+                    <img src="graphic1.jpeg" alt="Graphics Design">
+                </div>
+                <h3>Graphics Design</h3>
+                <p>Creating stunning visual designs for brands, social media, and marketing materials that capture attention and communicate effectively.</p>
             </div>
-        </section>
 
-        <section>
-            <h2>What I Do</h2>
-            <div class="services-grid">
-                <div class="service-card" onclick="navigateTo('graphics')">
-                    <div class="service-icon"><img src="graphic1.jpeg" alt="Graphics Design"></div>
-                    <h3>Graphics Design</h3>
-                    <p>Creating stunning visual designs for brands, social media, and marketing materials that capture attention and communicate effectively.</p>
-                    <span class="view-work-btn">View Work</span>
+            <div class="service-card">
+                <div class="service-icon">
+                    <img src="henna1.jpeg" alt="Henna Art">
                 </div>
-
-                <div class="service-card" onclick="navigateTo('henna')">
-                    <div class="service-icon"><img src="henna1.jpeg" alt="Henna Art"></div>
-                    <h3>Henna Art</h3>
-                    <p>Beautiful and intricate henna designs for weddings, celebrations, and special occasions. Traditional and contemporary patterns.</p>
-                    <span class="view-work-btn">View Work</span>
-                </div>
-
-                <div class="service-card" onclick="navigateTo('events')">
-                    <div class="service-icon"><img src="event1.jpeg" alt="Event Styling"></div>
-                    <h3>Event Styling</h3>
-                    <p>Transforming spaces into memorable experiences. From intimate gatherings to grand celebrations, every detail matters.</p>
-                    <span class="view-work-btn">View Work</span>
-                </div>
-
+                <h3>Henna Art</h3>
+                <p>Beautiful and intricate henna designs for weddings, celebrations, and special occasions. Traditional and contemporary patterns.</p>
             </div>
-        </section>
-    </div>
 
-    <!-- ABOUT PAGE -->
-    <div id="about" class="page">
-        <section>
-            <h2>About Me</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>Hello! I'm Raheemat Abdulfatai, a passionate creative designer specializing in graphics design, henna artistry, and event styling. I believe in transforming ordinary moments into extraordinary experiences through my artistic vision.</p>
-                    
-                    <p>My journey in the creative industry has been driven by a deep love for aesthetics and attention to detail. Whether I'm designing stunning graphics, creating intricate henna patterns, or styling memorable events, I pour my heart into every project.</p>
-                    
-                    <p>I'm also expanding my horizons as a web designer, combining my creative eye with technical skills to build beautiful digital experiences. Currently pursuing my education in Computer Science at my university, I'm constantly learning and evolving.</p>
-                    
-                    <p>I'm open to collaborations, new projects, and exciting opportunities. Let's create something beautiful together!</p>
-                    
-                    <div class="skills">
-                        <span class="skill-tag">Graphics Design</span>
-                        <span class="skill-tag">Henna Art</span>
-                        <span class="skill-tag">Event Styling</span>
-                        <span class="skill-tag">Web Design</span>
-                        <span class="skill-tag">Branding</span>
-                        <span class="skill-tag">Creative Direction</span>
-                    </div>
+            <div class="service-card">
+                <div class="service-icon">
+                    <img src="event1.jpeg" alt="Event Styling">
                 </div>
-
+                <h3>Event Styling</h3>
+                <p>Transforming spaces into memorable experiences. From intimate gatherings to grand celebrations, every detail matters.</p>
             </div>
-        </section>
-    </div>
+        </div>
+    </section>
 
-    <!-- PORTFOLIO PAGE -->
-    <div id="portfolio" class="page">
-        <section>
-            <h2>My Portfolio</h2>
-            <p style="text-align: center; color: var(--text-muted); margin-bottom: 3rem;">Explore my creative work across different specializations</p>
-            <div class="services-grid">
-                <div class="service-card" onclick="navigateTo('graphics')">
-                    <div class="service-icon"><img src="graphic2.jpeg" alt="Graphics Design"></div>
-                    <h3>Graphics Design</h3>
-                    <p>Logo designs, social media graphics, branding materials, and more</p>
-                    <span class="view-work-btn">View Gallery</span>
-                </div>
-
-                <div class="service-card" onclick="navigateTo('henna')">
-                    <div class="service-icon"><img src="henna2.jpeg" alt="Graphics Design"></div>
-                    <h3>Henna Art</h3>
-                    <p>Traditional and modern henna designs for all occasions</p>
-                    <span class="view-work-btn">View Gallery</span>
-                </div>
-
-                <div class="service-card" onclick="navigateTo('events')">
-                    <div class="service-icon"><img src="event2.jpeg" alt="Graphics Design"></div>
-                    <h3>Event Styling</h3>
-                    <p>Wedding decorations, party setups, and event transformations</p>
-                    <span class="view-work-btn">View Gallery</span>
-                </div>
-
-            </div>
-        </section>
-    </div>
-
-    <!-- GRAPHICS DESIGN PAGE -->
-<div id="graphics" class="page">
-    <section>
-        <a class="back-btn" onclick="navigateTo('portfolio')">← Back to Portfolio</a>
-        <h2>Graphics Design</h2>
-
+    <!-- Portfolio Section -->
+    <section id="portfolio">
+        <h2>My Portfolio</h2>
+        
+        <h3 class="portfolio-category">Graphics Design</h3>
         <div class="gallery-grid">
             <div class="gallery-item">
                 <img src="graphic2.jpeg" alt="Graphics design work">
@@ -145,18 +81,11 @@
                 <img src="graphic5.jpeg" alt="Graphics design work">
             </div>
             <div class="gallery-item">
-                <img src="graphic6.jpeg" alt="Graphics design work">
+                <img src="graphic8.jpeg" alt="Graphics design work">
             </div>
         </div>
-    </section>
-</div>
 
-<!-- HENNA ART PAGE -->
-<div id="henna" class="page">
-    <section>
-        <a class="back-btn" onclick="navigateTo('portfolio')">← Back to Portfolio</a>
-        <h2>Henna Art</h2>
-
+        <h3 class="portfolio-category">Henna Art</h3>
         <div class="gallery-grid">
             <div class="gallery-item">
                 <img src="henna2.jpeg" alt="Henna art">
@@ -174,19 +103,9 @@
                 <img src="henna1.jpeg" alt="Henna art">
             </div>
         </div>
-    </section>
-</div>
 
-<!-- EVENT STYLING PAGE -->
-<div id="events" class="page">
-    <section>
-        <a class="back-btn" onclick="navigateTo('portfolio')">← Back to Portfolio</a>
-        <h2>Event Styling & Decoration</h2>
-
+        <h3 class="portfolio-category">Event Styling & Decoration</h3>
         <div class="gallery-grid">
-            <div class="gallery-item">
-                <img src="event1.jpeg" alt="Event styling">
-            </div>
             <div class="gallery-item">
                 <img src="event2.jpeg" alt="Event styling">
             </div>
@@ -199,215 +118,214 @@
             <div class="gallery-item">
                 <img src="event5.jpeg" alt="Event styling">
             </div>
+            <div class="gallery-item">
+                <img src="event1.jpeg" alt="Event styling">
+            </div>
         </div>
     </section>
-</div>
 
-
-    <!-- COURSES PAGE -->
-    <div id="courses" class="page">
-        <section>
-            <h2>Academic Information</h2>
-            <div class="course-form">
-                <div class="form-header">
-                    <h3 style="color: var(--primary-green); margin-bottom: 0.5rem;">COURSE REGISTRATION FORM</h3>
-                    <p style="color: var(--text-muted);">2025/2026 Academic Session</p>
-                </div>
-                
-                <div class="form-info">
-                    <div class="info-item">
-                        <div class="info-label">Matric Number</div>
-                        <div class="info-value">24/CONAS/CSC/023</div>
-                    </div>
-                    <div class="info-item">
-                        <div class="info-label">Full Name</div>
-                        <div class="info-value">RAHEEMAT Abdulfatai</div>
-                    </div>
-                    <div class="info-item">
-                        <div class="info-label">Gender</div>
-                        <div class="info-value">FEMALE</div>
-                    </div>
-                    <div class="info-item">
-                        <div class="info-label">Session</div>
-                        <div class="info-value">2025/2026 - First Semester</div>
-                    </div>
-                </div>
-
-                <h4 style="color: var(--primary-green); margin: 2rem 0 1rem;">First Semester Courses</h4>
-                
-                <div style="overflow-x: auto;">
-                    <table class="course-table">
-                        <thead>
-                            <tr>
-                                <th>S/NO</th>
-                                <th>Course Title</th>
-                                <th>Course Code</th>
-                                <th>Units</th>
-                                <th>Status</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>1</td>
-                                <td>Computer Programming I</td>
-                                <td>COS 201</td>
-                                <td>3</td>
-                                <td>C</td>
-                            </tr>
-                            <tr>
-                                <td>2</td>
-                                <td>Digital Logic Design</td>
-                                <td>IFT 211</td>
-                                <td>2</td>
-                                <td>C</td>
-                            </tr>
-                            <tr>
-                                <td>3</td>
-                                <td>Discrete Structures</td>
-                                <td>CSC 203</td>
-                                <td>2</td>
-                                <td>C</td>
-                            </tr>
-                            <tr>
-                                <td>4</td>
-                                <td>Drone Technology, Piloting and Application</td>
-                                <td>SUN-GET 217</td>
-                                <td>3</td>
-                                <td>R</td>
-                            </tr>
-                            <tr>
-                                <td>5</td>
-                                <td>Entrepreneurship and Innovation</td>
-                                <td>ENT 211</td>
-                                <td>2</td>
-                                <td>C</td>
-                            </tr>
-                            <tr>
-                                <td>6</td>
-                                <td>Frontend Technology I</td>
-                                <td>SUN-CSC 203</td>
-                                <td>2</td>
-                                <td>E</td>
-                            </tr>
-                            <tr>
-                                <td>7</td>
-                                <td>History, Heritage and Story Telling</td>
-                                <td>SUN-CSC 201</td>
-                                <td>1</td>
-                                <td>R</td>
-                            </tr>
-                            <tr>
-                                <td>8</td>
-                                <td>Introduction to Cybersecurity and Strategy</td>
-                                <td>CYB 201</td>
-                                <td>2</td>
-                                <td>C</td>
-                            </tr>
-                            <tr>
-                                <td>9</td>
-                                <td>Introduction to Software Engineering</td>
-                                <td>SEN 201</td>
-                                <td>2</td>
-                                <td>C</td>
-                            </tr>
-                            <tr>
-                                <td>10</td>
-                                <td>Mathematical Methods I</td>
-                                <td>MTH 201</td>
-                                <td>2</td>
-                                <td>C</td>
-                            </tr>
-                            <tr>
-                                <td>11</td>
-                                <td>SIWES I</td>
-                                <td>CSC 299</td>
-                                <td>3</td>
-                                <td>C</td>
-                            </tr>
-                            <tr class="total-row">
-                                <td colspan="3"><strong>Total Course Units</strong></td>
-                                <td colspan="2"><strong>24</strong></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-
-                <p style="color: var(--text-muted); margin-top: 1.5rem; font-size: 0.9rem;">
-                    <strong>Course Status:</strong> C - Compulsory | E - Elective | R - Required
-                </p>
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <p>Hello! I'm Raheemat Abdulfatai, a passionate creative designer specializing in graphics design, henna artistry, and event styling. I believe in transforming ordinary moments into extraordinary experiences through my artistic vision.</p>
+            
+            <p>My journey in the creative industry has been driven by a deep love for aesthetics and attention to detail. Whether I'm designing stunning graphics, creating intricate henna patterns, or styling memorable events, I pour my heart into every project.</p>
+            
+            <p>I'm also expanding my horizons as a web designer, combining my creative eye with technical skills to build beautiful digital experiences. Currently pursuing my education in Computer Science at my university, I'm constantly learning and evolving.</p>
+            
+            <p>I'm open to collaborations, new projects, and exciting opportunities. Let's create something beautiful together!</p>
+            
+            <div class="skills">
+                <span class="skill-tag">Graphics Design</span>
+                <span class="skill-tag">Henna Art</span>
+                <span class="skill-tag">Event Styling</span>
+                <span class="skill-tag">Web Design</span>
+                <span class="skill-tag">Branding</span>
+                <span class="skill-tag">Creative Direction</span>
             </div>
-        </section>
-    </div>
+        </div>
+    </section>
 
-    <!-- CONTACT PAGE -->
-    <div id="contact" class="page">
-        <section>
-            <h2>Get In Touch</h2>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <div class="contact-icon">📧</div>
-                        <div>
-                            <h4 style="color: var(--primary-green); margin-bottom: 0.5rem;">Email</h4>
-                            <p>raheemahabdulfatai@gmail.com</p>
-                        </div>
-                    </div>
-                    
-                    <div class="contact-item">
-                        <div class="contact-icon">📱</div>
-                        <div>
-                            <h4 style="color: var(--primary-green); margin-bottom: 0.5rem;">Phone</h4>
-                            <p>07030531908</p>
-                        </div>
-                    </div>
-                    
-                    <div class="contact-item">
-                        <div class="contact-icon">💼</div>
-                        <div>
-                            <h4 style="color: var(--primary-green); margin-bottom: 0.5rem;">Services</h4>
-                            <p>Graphics Design • Henna Art • Event Styling • Web Design</p>
-                        </div>
-                    </div>
-
-                    <div class="contact-item">
-                        <div class="contact-icon">🤝</div>
-                        <div>
-                            <h4 style="color: var(--primary-green); margin-bottom: 0.5rem;">Collaboration</h4>
-                            <p>Open to exciting projects and creative partnerships</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <form class="contact-form" id="contactForm">
-                    <div class="form-group">
-                        <label for="name">Your Name</label>
-                        <input type="text" id="name" name="name" required>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="email">Your Email</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="message">Your Message</label>
-                        <textarea id="message" name="message" required></textarea>
-                    </div>
-                    
-                    <button type="submit" class="submit-button">Send Message</button>
-                </form>
+    <!-- Courses Section -->
+    <section id="courses">
+        <h2>Academic Information</h2>
+        <div class="course-form">
+            <div class="form-header">
+                <h3>COURSE REGISTRATION FORM</h3>
+                <p>2025/2026 Academic Session</p>
             </div>
-        </section>
-    </div>
+            
+            <div class="form-info">
+                <div class="info-item">
+                    <div class="info-label">Matric Number</div>
+                    <div class="info-value">24/CONAS/CSC/023</div>
+                </div>
+                <div class="info-item">
+                    <div class="info-label">Full Name</div>
+                    <div class="info-value">RAHEEMAT Abdulfatai</div>
+                </div>
+                <div class="info-item">
+                    <div class="info-label">Gender</div>
+                    <div class="info-value">FEMALE</div>
+                </div>
+                <div class="info-item">
+                    <div class="info-label">Session</div>
+                    <div class="info-value">2025/2026 - First Semester</div>
+                </div>
+            </div>
+
+            <h4>First Semester Courses</h4>
+            
+            <div class="table-wrapper">
+                <table class="course-table">
+                    <thead>
+                        <tr>
+                            <th>S/NO</th>
+                            <th>Course Title</th>
+                            <th>Course Code</th>
+                            <th>Units</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Computer Programming I</td>
+                            <td>COS 201</td>
+                            <td>3</td>
+                            <td>C</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Digital Logic Design</td>
+                            <td>IFT 211</td>
+                            <td>2</td>
+                            <td>C</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Discrete Structures</td>
+                            <td>CSC 203</td>
+                            <td>2</td>
+                            <td>C</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Drone Technology, Piloting and Application</td>
+                            <td>SUN-GET 217</td>
+                            <td>3</td>
+                            <td>R</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Entrepreneurship and Innovation</td>
+                            <td>ENT 211</td>
+                            <td>2</td>
+                            <td>C</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>Frontend Technology I</td>
+                            <td>SUN-CSC 203</td>
+                            <td>2</td>
+                            <td>E</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>History, Heritage and Story Telling</td>
+                            <td>SUN-CSC 201</td>
+                            <td>1</td>
+                            <td>R</td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>Introduction to Cybersecurity and Strategy</td>
+                            <td>CYB 201</td>
+                            <td>2</td>
+                            <td>C</td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>Introduction to Software Engineering</td>
+                            <td>SEN 201</td>
+                            <td>2</td>
+                            <td>C</td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>Mathematical Methods I</td>
+                            <td>MTH 201</td>
+                            <td>2</td>
+                            <td>C</td>
+                        </tr>
+                        <tr>
+                            <td>11</td>
+                            <td>SIWES I</td>
+                            <td>CSC 299</td>
+                            <td>3</td>
+                            <td>C</td>
+                        </tr>
+                        <tr class="total-row">
+                            <td colspan="3"><strong>Total Course Units</strong></td>
+                            <td colspan="2"><strong>24</strong></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <p class="course-note">
+                <strong>Course Status:</strong> C - Compulsory | E - Elective | R - Required
+            </p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Get In Touch</h2>
+        <div class="contact-content">
+            <div class="contact-item">
+                <div class="contact-icon">📧</div>
+                <div>
+                    <h4>Email</h4>
+                    <p>
+                         <a href="mailto:raheemahabdulfatai@gmail.com">
+                    raheemahabdulfatai@gmail.com
+                </a>
+                    </p>
+                </div>
+            </div>
+            
+            <div class="contact-item">
+                <div class="contact-icon">📱</div>
+                <div>
+                    <h4>Phone</h4>
+                    <p>07030531908</p>
+                </div>
+            </div>
+            
+            <div class="contact-item">
+                <div class="contact-icon">💼</div>
+                <div>
+                    <h4>Services</h4>
+                    <p>Graphics Design • Henna Art • Event Styling • Web Design</p>
+                </div>
+            </div>
+
+            <div class="contact-item">
+                <div class="contact-icon">🤝</div>
+                <div>
+                    <h4>Collaboration</h4>
+                    <p>Open to exciting projects and creative partnerships</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Footer -->
     <footer>
         <p>&copy; 2025 Raheemat Abdulfatai. All rights reserved.</p>
-        <p style="color: var(--text-muted); margin-top: 0.5rem;">Designed with 💚 by Raheemat</p>
+        <p>Designed with 💚 by Raheemat</p>
     </footer>
-
-    <!-- External Scripts -->
-    <script src="script.js"></script>
 </body>
-
 </html>
